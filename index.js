@@ -6,7 +6,7 @@ const cors = require('cors');
 app.use(cors());
 
 const AuthController = require('./controller/AuthController');
-app.use('/api/auth',AuthController);
+app.use('/account',AuthController);
 
 app.listen(port,() => {
     console.log('listening on port 5000')
